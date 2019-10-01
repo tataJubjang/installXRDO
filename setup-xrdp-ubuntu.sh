@@ -4,15 +4,6 @@
 #------------------------------------------------
 #
 
-while getopts g:s: option 
-do 
- case "${option}" 
- in 
- g) fixGDM=${OPTARG};; 
- s) fixSound=${OPTARG};; 
- esac 
-done 
-
 echo
 /bin/echo -e "\e[1;36m   !-------------------------------------------------------------!\e[0m"
 /bin/echo -e "\e[1;36m   !   Standard XRDP Installation Script  - Ver 0.5.1            !\e[0m"
