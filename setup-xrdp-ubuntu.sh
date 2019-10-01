@@ -11,35 +11,27 @@ echo
 /bin/echo -e "\e[1;36m   !-------------------------------------------------------------!\e[0m"
 echo
 
-update()
-{
+
 echo
 /bin/echo -e
 "\e [1;33m  !■■■■■■■■การอัพเดท■■■■■■■■■■!\e [0m"
 echo
 
 apt update -y
-}
-instaallfirewalld()
+
 {
 /bin/echo -e
-"\e [1;33m  !■■■■■■■■การอัพเดท■■■■■■■■■■!\e [0m"
+"\e [1;33m  !■■■■■■■■การลงไฟล์วอล■■■■■■■■■■!\e [0m"
 echo
 
 apt install ufw
 ufw allow 3389
-}
 
-install-xrdp()
-{
 /bin/echo -e
 "\e [1;33m  !■■■■■■■■ติดตั้งรีโมท■■■■■■■■■■!\e [0m"
 echo
 apt install xrdp
 
-}
-insall-mate()
-{
 echo
 /bin/echo -e
 "\e [1;33m  !■■■■■■■■ติดตั้งเดปท็อป■■■■■■■■■■!\e [0m"
@@ -50,6 +42,6 @@ apt install mate-core mate-desktop-environment mate-notification-daemon
 sed -i.bak '/fi/a #xrdp multiple users configuration \n mate-session \n' /etc/xrdp/startwm.sh
 systemctl enable xrdp
 systemctl start xrdp
-}
+
 echo "เสร็จแล้วเทสได้เลย หากเออเร่อติดต่อได้ที่"
 echo "FB:ยลยุทธ วันชาติ"
