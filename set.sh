@@ -16,13 +16,13 @@ apt install -y ubuntu-mate-desktop
 
 #downloadScript
 
-cd /usr/bin
+cd ~/usr/bin
 wget -O m https://raw.githubusercontent.com/tataJubjang/installXRDO/master/m.sh
-wget -O xrdp-install.sh https://raw.githubusercontent.com/tataJubjang/installXRDO/master/xrdp-install.sh
+wget -O xrdp-install https://raw.githubusercontent.com/tataJubjang/installXRDO/master/xrdp-install.sh
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
-chmod +x menu
-chmod +x xrdp-install.sh 
+chmod +x m
+chmod +x xrdp-install
 clear
 
 printf '###############################\n'
