@@ -18,7 +18,7 @@ apt install -y ubuntu-mate-desktop
 
 cd ~/usr/bin
 wget -O m https://raw.githubusercontent.com/tataJubjang/installXRDO/master/m.sh
-wget -O xrdp-install https://raw.githubusercontent.com/tataJubjang/installXRDO/master/xrdp-install.sh
+wget -O xrdp-install https://raw.githubusercontent.com/tataJubjang/installXRDO/master/set.sh
 echo "0 0 * * * root /sbin/reboot" > /etc/cron.d/reboot
 
 chmod +x m
