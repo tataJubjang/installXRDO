@@ -3,14 +3,6 @@
 # Setup Ubuntu 16.04 with xRDP via MATE-Desktop
 #------------------------------------------------
 #
-while getopts g:s: option 
-do 
- case "${option}" 
- in 
- g) fixGDM=${OPTARG};; 
- s) fixSound=${OPTARG};; 
- esac 
-done 
 
 echo
 /bin/echo -e "\e[1;56m   !-------------------------------------------------------------!\e[0m"
